@@ -1,0 +1,86 @@
+<style>
+    .parentBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        margin: 25px auto;
+        padding: 100px;
+        width: 700px;
+    }
+
+    .childBox {
+        height: 50px;
+        width: 150px;
+        background: rgba(255, 0, 0, .7);
+        transition: 1s;
+    }
+
+    p {
+        margin-top: 70px;
+    }
+
+    .childBox:nth-of-type(1) {
+        animation: animation 1s linear 0s infinite normal;
+    }
+
+    .childBox:nth-of-type(2) {
+        animation: animation 1s linear .1s infinite normal;
+    }
+
+    .childBox:nth-of-type(3) {
+        animation: animation 1s linear .2s infinite normal;
+    }
+
+    .childBox:nth-of-type(4) {
+        animation: animation 1s linear .3s infinite normal;
+    }
+
+    .childBox:nth-of-type(5) {
+        animation: animation 1s linear .4s infinite normal;
+    }
+
+    .childBox:nth-of-type(6) {
+        animation: animation 1s linear .5s infinite normal;
+    }
+
+    .childBox:nth-of-type(7) {
+        animation: animation 1s linear .6s infinite normal;
+    }
+
+    .childBox:nth-of-type(8) {
+        animation: animation 1s linear .7s infinite normal;
+    }
+
+    .childBox:nth-of-type(9) {
+        animation: animation 1s linear .8s infinite normal;
+    }
+
+    .childBox:nth-of-type(10) {
+        animation: animation 1s linear .9s infinite normal;
+    }
+
+    @keyframes animation {
+        0% {
+            transform: rotateZ(0);
+        }
+
+        100% {
+            transform: rotateZ(180deg);
+        }
+    }
+</style>
+
+<div class="parentBox">
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <div class="childBox"></div>
+    <p>rotate animation</p>
+</div>
